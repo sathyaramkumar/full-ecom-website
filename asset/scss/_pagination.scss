@@ -1,0 +1,13 @@
+.pagination {
+    width: 430px;
+    margin: 80px auto;
+    &__link {
+        padding: 0 20px;
+        font-size: $font-size-18;
+        font-weight: $font-weight-300;
+        color: $text-muted;
+    }
+    .active {
+        color: black;
+    }
+}
