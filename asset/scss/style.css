@@ -160,7 +160,7 @@ li {
 
 .navbar__navs__input .navbar__nav .navbar__list .navbar__item .navbar__dropdown {
   position: absolute;
-  top: 28px;
+  top: 23px;
   left: -10px;
   display: none;
   width: 200px;
@@ -395,6 +395,7 @@ li {
 
 .blog__list .blog__item .card__body__period .card__menu {
   margin-left: 150px;
+  color: #000000;
 }
 
 .blog__list .blog__item .card__body__text__link {
@@ -569,7 +570,7 @@ li {
 }
 
 .pagination {
-  width: 430px;
+  width: 450px;
   margin: 80px auto;
 }
 
