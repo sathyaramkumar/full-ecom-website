@@ -1,0 +1,71 @@
+// header 
+.login__navbar {
+    @include flex-jc-ai(row , space-between , center);
+    padding: 10px 40px;
+    &__brand {
+        font-size: $font-size-40;
+        font-weight: $font-weight-700;
+        color: $black;
+    }
+    &__close {
+        display: block;
+        width: 50px;
+        hr {
+            width: 4px;
+            height: 40px;
+            border-radius: 50px;
+            color: $black;
+            background-color: $black;
+        }
+        &__right {
+            transform: rotate(45deg);
+        }
+        &__left {
+            margin-top: -40px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+// main
+.login {
+    text-align: center;
+    &__title {
+        font-size: $font-size-56;
+        font-weight: $font-weight-700;
+        line-height: $line-height-62;
+    }
+    &__sub__title {
+        font-size: $font-size-22;
+        font-weight: $font-weight-300;
+        &__link {
+            font-size: $font-size-22;
+            font-weight: $font-weight-300;
+        }
+    }
+    &__container {
+        @include flex(row);
+        .form {
+            &__container {
+                &__label {}
+                &__input {}
+                &__highlight {}
+                &__bar {}
+            }
+            &__btn {}
+        }
+        .account {
+            &__link {
+                display: block;
+                &__img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+    &__privacy {
+        &__text {
+            &__link {}
+        }
+    }
+}

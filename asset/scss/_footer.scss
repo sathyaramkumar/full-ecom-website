@@ -21,7 +21,13 @@
             }
             &__list {
                 .footer__content {
-                    &__text {}
+                    &__text {
+                        width: 300px;
+                        margin-top: 20px;
+                        font-size: $font-size-16;
+                        font-weight: $font-weight-300;
+                        color: $black;
+                    }
                 }
             }
         }

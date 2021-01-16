@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>
+            Login | wix
+        </title>
+
+        <!-- icon link -->
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+        <!-- font family link -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700&display=swap" rel="stylesheet">
+
+        <!-- css link -->
+        <link rel="stylesheet" href="asset/scss/style.css">
+    </head>
+    <body>
+
+        <!-- header -->
+        <header class="login__navbar">
+            <a class="login__navbar__brand" href="index.html">
+                Wix
+            </a>
+            <a class="login__navbar__close" href="index.html">
+                <hr class="login__navbar__close__right">
+                <hr class="login__navbar__close__left">
+            </a>
+        </header>
+
+        <!-- main -->
+        <main class="login">
+            <h1 class="login__title">
+                Login
+            </h1>
+            <h3 class="login__sub__title">
+                Already have an account? 
+                <a class="login__sub__title__link" href="#">Log In</a>
+            </h3>
+            <div class="login__container">
+                <form class="form">
+
+                    <div class="form__container">
+                        <label class="form__container__label" for="emailInput">Email</label>
+                        <input class="form__container__input" id="emailInput" type="email" required>
+                        <span class="form__container__highlight"></span>
+                        <span class="form__container__bar"></span>
+                    </div>
+
+                    <div class="form__container">
+                        <label class="form__container__label" for="emailInputAgain">Type Your Email Again</label>
+                        <input class="form__container__input" id="emailInputAgain" type="email" required>
+                        <span class="form__container__highlight"></span>
+                        <span class="form__container__bar"></span>
+                    </div>
+
+                    <div class="form__container">
+                        <label class="form__container__label" for="passwordInput">Password</label>
+                        <input class="form__container__input" id="passwordInput" type="password" required>
+                        <span class="form__container__highlight"></span>
+                        <span class="form__container__bar"></span>
+                    </div>
+
+                    <div class="form__container">
+                        <label class="form__container__label" for="passwordInputAgain">Type Your Password Again</label>
+                        <input class="form__container__input" id="passwordInputAgain" type="password" required>
+                        <span class="form__container__highlight"></span>
+                        <span class="form__container__bar"></span>
+                    </div>
+
+                    <button class="form__btn" type="submit">
+                        Log in
+                    </button>
+                </form>
+
+                <div class="account">
+                    <a class="account__link" href="#">
+                        <img class="account__link__img" src="asset/img/facebook icon.png" alt="facebook icon">
+                        Continue with Facebook
+                    </a>
+                    <a class="account__link" href="#">
+                        <img class="account__link__img" src="asset/img/google icon.png" alt="google icon">
+                        Continue with Google
+                    </a>
+                </div>
+            </div>
+            <div class="login__privacy">
+                <p class="login__privacy__text">
+                    *By signing up, you agree to our 
+                    <a class="login__privacy__text__link" href="#">Terms of Use</a> and to recive Wix emails 
+                    & updates and acknowledge that you read our 
+                    <a class="login__privacy__text__link" href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </main>
+    </body>
+</html>
