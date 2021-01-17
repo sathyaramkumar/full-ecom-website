@@ -40,8 +40,9 @@ li {
 
 // hero section commom 
 .hero__container {
-    margin: 300px 0 0 120px;
+    margin: calc(0.15625 * 100vh) 0 0 calc(0.0625 * 100vw); // 300px 0 0 120px
 }
+
 .hero__h1 {
     font-size: $font-size-48;
     font-weight: $font-weight-700;

@@ -2,37 +2,46 @@
     text-align: center;
     border-top: 1px solid $black;
     background-color: $light-dark-background;
+
     &__title {
-        padding: 50px 0;
+        padding: calc(0.026041 * 100vh) 0; // 50px
         font-size: $font-size-40;
     }
+
     &__content {
         @include flex-jc-ai (row, center, center);
+
         .solution__card {
             display: block;
-            width: 506px;
-            padding: 90px 50px;
+            width: 33.333vw; // 506px
+            padding: calc(0.046975 * 100vh) calc(0.026041 * 100vw); // 90px 50px
             border: 1px solid $black;
+
             &:first-child {
                 border-left: none;
                 border-right: none;
             }
+
             &:last-child {
                 border-left: none;
                 border-right: none;
             }
+
             &__title {
                 font-size: $font-size-32;
             }
+
             &__text {
                 font-size: $font-size-22;
                 font-weight: $font-weight-300;
             }
+
             &__link {
                 font-size: $font-size-18;
                 font-weight: $font-weight-700;
                 text-decoration: underline;
                 color: $black;
+                
                 &::after {
                     content: '\f061';
                     font-family: "Font Awesome 5 Free"; 

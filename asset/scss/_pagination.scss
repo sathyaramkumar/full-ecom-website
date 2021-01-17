@@ -1,12 +1,14 @@
 .pagination {
-    width: 450px;
-    margin: 80px auto;
+    width: calc(0.234375 * 100vw); // 450px 
+    margin: calc(0.041666 * 100vh) auto; // 80px
+
     &__link {
-        padding: 0 20px;
+        padding: 0 calc(0.010416 * 100vw); // 20px
         font-size: $font-size-18;
         font-weight: $font-weight-300;
         color: $text-muted;
     }
+    
     .active {
         color: black;
     }

@@ -11,15 +11,16 @@ $light-dark-background: #F2F2F2;
 $font-family: 'Mukta', sans-serif;
 
 // font size
-$font-size-14: 14px;
-$font-size-16: 16px;
-$font-size-18: 18px;
-$font-size-20: 20px;
-$font-size-22: 22px;
-$font-size-32: 32px;
-$font-size-40: 40px;
-$font-size-48: 48px;
-$font-size-56: 56px;
+$font-size-13: calc(0.006770 * 100vw);
+$font-size-14: calc(0.007291 * 100vw);
+$font-size-16: calc(0.008333 * 100vw);
+$font-size-18: calc(0.009375 * 100vw);
+$font-size-20: calc(0.010416 * 100vw);
+$font-size-22: calc(0.011458 * 100vw);
+$font-size-32: calc(0.016666 * 100vw);
+$font-size-40: calc(0.020833 * 100vw);
+$font-size-48: calc(0.025 * 100vw);
+$font-size-56: calc(0.029166 * 100vw);
 
 // font weight
 $font-weight-300: 300;
@@ -27,8 +28,8 @@ $font-weight-500: 500;
 $font-weight-700: 700;
 
 // line height
-$line-height-22: 22px;
-$line-height-25: 25px;
-$line-height-30: 30px;
-$line-height-41: 41px;
-$line-height-62: 62px;
+$line-height-22: calc(0.011458 * 100vw);
+$line-height-25: calc(0.013020 * 100vw);
+$line-height-30: calc(0.015625 * 100vw);
+$line-height-41: calc(0.021354 * 100vw);
+$line-height-62: calc(0.032291 * 100vw);

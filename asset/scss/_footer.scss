@@ -1,16 +1,23 @@
 .footer {
-    padding: 50px 200px;
+    padding: calc(0.026041 * 100vh) calc(0.104166 * 100vw); // 50px 200px
+
     &__nav__container {
         @include flex-jc-ai (row, space-between, start);
+
         .footer__col {
+
             &__title {
-                padding: 15px 0;
+                padding: calc(0.0078125 * 100vh) 0; // 15px
                 font-size: $font-size-16;
             }
+
             .footer__nav {
+
                 &__list {
+
                     .footer__nav__item {
-                        padding: 3px 0;
+                        padding: calc(0.001562 * 100vh) 0; // 3px
+
                         .footer__nav__link {
                             font-size: $font-size-16;
                             font-weight: $font-weight-300;
@@ -19,11 +26,14 @@
                     }
                 }
             }
+
             &__list {
+
                 .footer__content {
+
                     &__text {
-                        width: 300px;
-                        margin-top: 20px;
+                        width: calc(0.15625 * 100vw); // 300px
+                        margin-top: calc(0.010416 * 100vh); // 20px
                         font-size: $font-size-16;
                         font-weight: $font-weight-300;
                         color: $black;
@@ -32,26 +42,33 @@
             }
         }
     }
+
     hr {
-        margin: 30px 0;
+        margin: calc(0.015625 * 100vh) 0; // 30px
     }
+
     &__description {
+
         &__brand {
             font-size: $font-size-32;
         }
+
         &__container {
             @include flex(row);
-            margin: 10px 0;
+            margin: calc(0.005208 * 100vh) 0; // 10px
+
             .footer__description__content {
-                width: 351px;
-                margin-right: 30px;
+                width: calc(0.182812 * 100vw); // 351px
+                margin-right: calc(0.015625 * 100vw); // 30px
+
                 &__text {
                     font-size: $font-size-16;
                     font-weight: $font-weight-300;
                 }
+
                 span {
                     display: block;
-                    padding-top: 30px;
+                    padding-top: calc(0.015625 * 100vh); // 30px
                     font-size: $font-size-16;
                     font-weight: $font-weight-300;
                 }

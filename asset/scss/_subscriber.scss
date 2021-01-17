@@ -2,11 +2,13 @@
     width: 100vw;
     height: 100vh;
     background-color: $green;
+
     &__close {
         display: block;
         width: 50px;
         margin-left: auto;
-        padding-top: 50px;
+        padding-top: calc(0.026041 * 100vh); // 50px
+
         hr {
             width: 4px;
             height: 40px;
@@ -14,48 +16,56 @@
             color: $white;
             background-color: $white;
         }
+
         &__right {
             transform: rotate(45deg);
         }
+
         &__left {
             margin-top: -40px;
             transform: rotate(-45deg);
         }
     }
+
     &__content {
         display: flex;
-        width: 510px;
-        height: 400px;
+        width: calc(0.265625 * 100vw); // 510px
+        height: 400px; 
         margin: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         .subscriber__title {
             font-size: $font-size-48;
             line-height: $line-height-62;
             color: $white;
         }
+
         .subscriber__container {
             text-align: left;
-            margin-right: 10px;
+            margin-right: calc(0.005208 * 100vw); // 10px
+
             &__label {
                 display: block;
-                margin: 10px 0;
+                margin: calc(0.005208 * 100vh) 0; // 10px
                 font-size: $font-size-20;
                 color: $white;
             }
+
             &__input {
-                width: 350px;
-                padding: 10px;
+                width: calc(0.182291 * 100vw); // 350px
+                padding: calc(0.005208 * 100vw); // 10px
                 border: 1px solid $white;
                 outline: none;
                 background-color: $green;
                 color: $white;
             }
+
             &__btn {
-                width: 120px;
-                margin: auto 10px;
-                padding: 5px 10px;
+                width: calc(0.0625 * 100vw); //120px
+                margin: auto calc(0.005208 * 100vw); // 10px
+                padding: calc(0.002604 * 100vh) calc(0.005208 * 100vw); // 5px 10px
                 font-size: $font-size-20;
                 font-weight: $font-weight-300;
                 color: $green;

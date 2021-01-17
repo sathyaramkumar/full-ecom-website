@@ -1,27 +1,32 @@
 // header 
 .login__navbar {
     @include flex-jc-ai(row , space-between , center);
-    padding: 10px 40px;
+    padding: calc(0.005208 * 100vh) calc(0.020833 * 100vw); // 10px 40px
+
     &__brand {
         font-size: $font-size-40;
         font-weight: $font-weight-700;
         color: $black;
     }
+
     &__close {
         display: block;
-        width: 50px;
+        width: calc(0.026041 * 100vw); // 50px
+
         hr {
-            width: 4px;
+            width: calc(0.002083 * 100vw); // 4px
             height: 40px;
             border-radius: 50px;
             color: $black;
             background-color: $black;
         }
+
         &__right {
             transform: rotate(45deg);
         }
+
         &__left {
-            margin-top: -40px;
+            margin-top: -40px; 
             transform: rotate(-45deg);
         }
     }
@@ -29,30 +34,37 @@
 
 // main
 .login {
-    margin-top: -40px;
+    margin-top: calc(-0.020833 * 100vh); // -40px
     text-align: center;
+
     &__title {
         font-size: $font-size-56;
         font-weight: $font-weight-700;
         line-height: $line-height-62;
     }
+
     &__sub__title {
-        margin: 20px 0;
+        margin: calc(0.010416 * 100vh) 0; // 20px
         font-size: $font-size-22;
         font-weight: $font-weight-300;
+
         &__link {
             font-size: $font-size-22;
             font-weight: $font-weight-300;
         }
     }
+
     &__container {
         @include flex-jc-ai(row , center , center);
+
         .form {
             border-right: 1px solid $black;
-            padding: 0 60px;
+            padding: 0 calc(0.03125 * 100vw); // 60px
+
             &__container {
                 position: relative;
-                margin: 30px 0;
+                margin: calc(0.03125 * 100vh) 0; // 60px
+
                 &__label {
                     position: absolute;
                     left: 5px;
@@ -61,24 +73,28 @@
                     pointer-events: none;
                     transition: 0.2s ease all;
                 }
+
                 &__input {
                     display: block;
-                    width: 350px;
-                    padding: 10px 10px;
+                    width: calc(0.182291 * 100vw); // 350px 
+                    padding: calc(0.005208 * 100vw); // 10px
                     font-size: $font-size-18;
                     border: none;
                     border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+
                     &:hover {
                         border-bottom: 1px solid $black;
                     }
                 }
+
                 .form__container__input:focus {
                     outline: none;
                 }
+
                 .form__container__input:focus ~ .form__container__label,
                 .form__container__input:valid ~ .form__container__label {
                     top: -20px;
-                    font-size: 13px;
+                    font-size: $font-size-13; 
                     color: $text-muted;
                 }
 
@@ -94,12 +110,14 @@
                     width: 100%;
                 }
             }
+
             &__btn {
                 display: block;
-                width: 150px;
-                padding: 5px;
-                margin: 30px 0;
+                width: calc(0.078125 * 100vw); // 150px
+                padding: calc(0.002604 * 100vw); // 5px
+                margin: calc(0.015625 * 100vh) 0; // 30px
                 border-radius: 50px;
+                font-size: $font-size-18;
                 font-weight: $font-weight-300;
                 color: $white;
                 background-color: $blue;
@@ -107,29 +125,34 @@
         }
 
         .account {
-            padding: 0 60px;
+            padding: 0 calc(0.03125 * 100vw); // 60px
+
             &__link {
                 display: flex;
-                height: 42px;
-                margin: 15px;
+                height: 42px; 
+                margin: calc(0.007812 * 100vw); // 15px
                 border: 1px solid $dark-blue;
                 background-color: $dark-blue;
                 color: $white;
+
                 &:nth-child(2) {
                     border: 1px solid $blue;
                     background-color: $blue;
                 }
+                
                 &__img {
                     width: 40px;
                     height: 40px;
                     margin-bottom: -10px;
                     background: $white;
                 }
+
                 &__text {
                     display: block;
-                    padding: 0 35px;
-                    padding-top: 8px;
+                    padding: 0 calc(0.018229 * 100vw); // 35px
+                    padding-top: 8px; 
                 }
+
                 .small__img {
                     width: 42px;
                     padding: 10px;
@@ -137,14 +160,20 @@
             }
         }
     }
+
     &__privacy {  
-        margin: 30px 0;   
+        margin: calc(0.015625 * 100vh) 0; // 30px
+
         &__text {
-            width: 350px;
+            width: calc(0.182291 * 100vw); // 350px
             margin: auto;
             font-size: $font-size-16;
             font-weight: $font-weight-300;
-            &__link {}
+            
+            &__link {
+               font-size: $font-size-16;
+               font-weight: $font-weight-300;
+            }
         }
     }
 }
