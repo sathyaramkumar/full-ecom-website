@@ -820,6 +820,7 @@ li {
   border: 1px solid white;
   outline: none;
   background-color: #27806A;
+  color: white;
 }
 
 .subscriber__content .subscriber__container__btn {
@@ -879,6 +880,7 @@ li {
 }
 
 .login {
+  margin-top: -40px;
   text-align: center;
 }
 
@@ -889,6 +891,7 @@ li {
 }
 
 .login__sub__title {
+  margin: 20px 0;
   font-size: 22px;
   font-weight: 300;
 }
@@ -902,17 +905,132 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
-.login__container .account__link {
+.login__container .form {
+  border-right: 1px solid #000000;
+  padding: 0 60px;
+}
+
+.login__container .form__container {
+  position: relative;
+  margin: 30px 0;
+}
+
+.login__container .form__container__label {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 20px;
+  pointer-events: none;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.login__container .form__container__input {
   display: block;
+  width: 350px;
+  padding: 10px 10px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.login__container .form__container__input:hover {
+  border-bottom: 1px solid #000000;
+}
+
+.login__container .form__container .form__container__input:focus {
+  outline: none;
+}
+
+.login__container .form__container .form__container__input:focus ~ .form__container__label,
+.login__container .form__container .form__container__input:valid ~ .form__container__label {
+  top: -20px;
+  font-size: 13px;
+  color: #929292;
+}
+
+.login__container .form__container__bar {
+  display: block;
+  height: 1.5px;
+  width: 0;
+  background: #126DFF;
+  -webkit-transition: 0.7s ease all;
+  transition: 0.7s ease all;
+}
+
+.login__container .form__container .form__container__input:focus ~ .form__container__bar {
+  width: 100%;
+}
+
+.login__container .form__btn {
+  display: block;
+  width: 150px;
+  padding: 5px;
+  margin: 30px 0;
+  border-radius: 50px;
+  font-weight: 300;
+  color: white;
+  background-color: #126DFF;
+}
+
+.login__container .account {
+  padding: 0 60px;
+}
+
+.login__container .account__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 42px;
+  margin: 15px;
+  border: 1px solid #3B5998;
+  background-color: #3B5998;
+  color: white;
+}
+
+.login__container .account__link:nth-child(2) {
+  border: 1px solid #126DFF;
+  background-color: #126DFF;
 }
 
 .login__container .account__link__img {
   width: 40px;
+  height: 40px;
+  margin-bottom: -10px;
+  background: white;
+}
+
+.login__container .account__link__text {
+  display: block;
+  padding: 0 35px;
+  padding-top: 8px;
+}
+
+.login__container .account__link .small__img {
+  width: 42px;
+  padding: 10px;
+}
+
+.login__privacy {
+  margin: 30px 0;
+}
+
+.login__privacy__text {
+  width: 350px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

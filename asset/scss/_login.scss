@@ -29,6 +29,7 @@
 
 // main
 .login {
+    margin-top: -40px;
     text-align: center;
     &__title {
         font-size: $font-size-56;
@@ -36,6 +37,7 @@
         line-height: $line-height-62;
     }
     &__sub__title {
+        margin: 20px 0;
         font-size: $font-size-22;
         font-weight: $font-weight-300;
         &__link {
@@ -44,28 +46,125 @@
         }
     }
     &__container {
-        @include flex(row);
+        @include flex-jc-ai(row , center , center);
         .form {
+            border-right: 1px solid $black;
+            padding: 0 60px;
             &__container {
-                &__label {}
-                &__input {}
-                &__highlight {}
-                &__bar {}
+                position: relative;
+                margin: 30px 0;
+                &__label {
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                    font-size: $font-size-20;
+                    pointer-events: none;
+                    transition: 0.2s ease all;
+                }
+                &__input {
+                    display: block;
+                    width: 350px;
+                    padding: 10px 10px;
+                    font-size: $font-size-18;
+                    border: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+                    &:hover {
+                        border-bottom: 1px solid $black;
+                    }
+                }
+                .form__container__input:focus {
+                    outline: none;
+                }
+                .form__container__input:focus ~ .form__container__label,
+                .form__container__input:valid ~ .form__container__label {
+                    top: -20px;
+                    font-size: 13px;
+                    color: $text-muted;
+                }
+
+                &__bar {
+                    display:block;
+                    height: 1.5px;
+                    width: 0;
+                    background: $blue;
+                    transition: 0.7s ease all;
+                }
+
+                .form__container__input:focus ~ .form__container__bar {
+                    width: 100%;
+                }
             }
-            &__btn {}
-        }
-        .account {
-            &__link {
+            &__btn {
                 display: block;
+                width: 150px;
+                padding: 5px;
+                margin: 30px 0;
+                border-radius: 50px;
+                font-weight: $font-weight-300;
+                color: $white;
+                background-color: $blue;
+            }
+        }
+
+        .account {
+            padding: 0 60px;
+            &__link {
+                display: flex;
+                height: 42px;
+                margin: 15px;
+                border: 1px solid $dark-blue;
+                background-color: $dark-blue;
+                color: $white;
+                &:nth-child(2) {
+                    border: 1px solid $blue;
+                    background-color: $blue;
+                }
                 &__img {
                     width: 40px;
+                    height: 40px;
+                    margin-bottom: -10px;
+                    background: $white;
+                }
+                &__text {
+                    display: block;
+                    padding: 0 35px;
+                    padding-top: 8px;
+                }
+                .small__img {
+                    width: 42px;
+                    padding: 10px;
                 }
             }
         }
     }
-    &__privacy {
+    &__privacy {  
+        margin: 30px 0;   
         &__text {
+            width: 350px;
+            margin: auto;
+            font-size: $font-size-16;
+            font-weight: $font-weight-300;
             &__link {}
         }
     }
 }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
